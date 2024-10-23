@@ -7,13 +7,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Aplicacion extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menuPrincipal.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(Aplicacion.class.getResource("menuPrincipal.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 900, 650);
+        stage.setTitle("Calculadora de integrales");
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 
